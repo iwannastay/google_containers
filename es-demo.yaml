@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: esdemo-pod-name
+  labels:
+    creation_method: manual
+    env: prod
+spec:
+  containers:
+  - image: lyh:v1
+    name: esdemo-container-name
+    ports: 
+    - containerPort: 85
+      protocol: TCP
+    
